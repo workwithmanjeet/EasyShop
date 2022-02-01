@@ -1,0 +1,22 @@
+{
+  "name": "easyShop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "joi": "^17.6.0",
+    "joi-phone-number": "^5.1.0",
+    "joi-postalcode": "^2.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.1.8",
+    "uuid": "^8.3.2"
+  }
+}
