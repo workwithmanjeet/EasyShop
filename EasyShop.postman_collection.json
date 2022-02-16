@@ -1,0 +1,627 @@
+{
+	"info": {
+		"_postman_id": "a7790da0-a5d0-43d0-845d-d0267350f833",
+		"name": "EasyShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/61f7f51a7e03e30b8f52da6a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"61f7f51a7e03e30b8f52da6a"
+					]
+				},
+				"description": "Provide UserId for get User Details"
+			},
+			"response": [
+				{
+					"name": "Customer details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/61f7f51a7e03e30b8f52da6a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"61f7f51a7e03e30b8f52da6a"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e6-v6Gya5GzHETmJoN6WU/Ejq7foOM\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Feb 2022 05:27:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"61f7f51a7e03e30b8f52da6a\",\n    \"customername\": \"manjeet\",\n    \"email\": \"manjeet@gmail.com\",\n    \"mobileNo\": 8978897888,\n    \"city\": \"Jaipur\",\n    \"customerID\": \"42202c89-bc98-430f-92e1-dffb5eea77ce\",\n    \"purchaseorder\": [\n        \"61f7f56c7e03e30b8f52da6e\"\n    ],\n    \"__v\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Register New Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customername",
+							"value": "Abishek",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Abishek@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "mobileNo",
+							"value": "9848561120",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Ranchi",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"register"
+					]
+				},
+				"description": "Post route for User registration"
+			},
+			"response": [
+				{
+					"name": "Register New Customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "customername",
+									"value": "Abishek",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Abishek@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "mobileNo",
+									"value": "9848561120",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Ranchi",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "204"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cc-HSxrO+p7tceJHTyvV/kLq9c1sLM\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Feb 2022 05:09:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"customername\": \"Abishek\",\n    \"email\": \"Abishek@gmail.com\",\n    \"mobileNo\": 9848561120,\n    \"city\": \"Ranchi\",\n    \"customerID\": \"b024632b-2b66-4d2b-9856-e6c55d36c478\",\n    \"purchaseorder\": [],\n    \"_id\": \"61f8c081566b2aee7d45e5db\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "New Purchase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productname",
+							"value": "Blue Ball Pen ",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "pricing",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "MRP",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/61f7e2e858a0f1f86363771e/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"61f7e2e858a0f1f86363771e",
+						"order"
+					]
+				},
+				"description": "Add Product"
+			},
+			"response": [
+				{
+					"name": "New Purchase",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "productname",
+									"value": "OnePlus",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "pricing",
+									"value": "17550",
+									"type": "text"
+								},
+								{
+									"key": "MRP",
+									"value": "20000",
+									"type": "text"
+								},
+								{
+									"key": "customerID",
+									"value": "dsfsdvfdsgvd",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/61f8c081566b2aee7d45e5db/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"61f8c081566b2aee7d45e5db",
+								"order"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e6-QDt2ooVKXJzbaLhDq1aNl4yx70Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Feb 2022 05:10:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"61f8c081566b2aee7d45e5db\",\n    \"customername\": \"Abishek\",\n    \"email\": \"Abishek@gmail.com\",\n    \"mobileNo\": 9848561120,\n    \"city\": \"Ranchi\",\n    \"customerID\": \"b024632b-2b66-4d2b-9856-e6c55d36c478\",\n    \"purchaseorder\": [\n        \"61f8c0b7566b2aee7d45e5de\"\n    ],\n    \"__v\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Shipping Address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/61f7e2e858a0f1f86363771e/order/61f7efc24da836060979be7f/shipping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"61f7e2e858a0f1f86363771e",
+						"order",
+						"61f7efc24da836060979be7f",
+						"shipping"
+					]
+				},
+				"description": "Add Shipping Details as Show in example"
+			},
+			"response": [
+				{
+					"name": "Add Shipping Address",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "address",
+									"value": "sector 985",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Pune",
+									"type": "text"
+								},
+								{
+									"key": "pincode",
+									"value": "411015",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/61f8c081566b2aee7d45e5db/order/61f8c0b7566b2aee7d45e5de/shipping",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"61f8c081566b2aee7d45e5db",
+								"order",
+								"61f8c0b7566b2aee7d45e5de",
+								"shipping"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "249"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f9-1rD0ks3rMCQ0F8WjwyB5J8sZ08E\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Feb 2022 05:11:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"61f8c0b7566b2aee7d45e5de\",\n    \"productname\": \"OnePlus\",\n    \"quantity\": 1,\n    \"pricing\": 17550,\n    \"MRP\": 20000,\n    \"purchaseID\": \"87f245c4-c03f-49b7-9953-0b27a2dec157\",\n    \"customerID\": \"b024632b-2b66-4d2b-9856-e6c55d36c478\",\n    \"__v\": 0,\n    \"shipping\": \"61f8c0fa566b2aee7d45e5e2\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Search with  Shipment City",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/orders/filter?city=Jaipur",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Jaipur"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search with  Shipment City",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/orders/filter?city=Jaipur",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "Jaipur"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "902"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"386-/f5y5qwSRiRXAn7fUpz2RLW2fOU\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Feb 2022 05:11:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"61f813c50bcd2559dc6bd993\",\n        \"customername\": \"Deepak\",\n        \"email\": \"Deepak@gmail.com\",\n        \"mobileNo\": 84575165434,\n        \"city\": \"Pune\",\n        \"customerID\": \"3aa3c4f3-cb13-483f-8d5f-01d77aa29bcf\",\n        \"purchaseorder\": [\n            {\n                \"_id\": \"61f817f8ba8fa65255040338\",\n                \"productname\": \"Apples\",\n                \"quantity\": 10,\n                \"pricing\": 175,\n                \"MRP\": 200,\n                \"purchaseID\": \"f4d351d4-ebc0-42f1-ae71-567c9cafe6b2\",\n                \"customerID\": \"3aa3c4f3-cb13-483f-8d5f-01d77aa29bcf\",\n                \"__v\": 0,\n                \"shipping\": \"61f8182bba8fa6525504033c\"\n            }\n        ],\n        \"__v\": 2\n    },\n    {\n        \"_id\": \"61f7f51a7e03e30b8f52da6a\",\n        \"customername\": \"manjeet\",\n        \"email\": \"manjeet@gmail.com\",\n        \"mobileNo\": 8978897888,\n        \"city\": \"Jaipur\",\n        \"customerID\": \"42202c89-bc98-430f-92e1-dffb5eea77ce\",\n        \"purchaseorder\": [\n            {\n                \"_id\": \"61f7f56c7e03e30b8f52da6e\",\n                \"productname\": \"Dairy Milk\",\n                \"quantity\": 10,\n                \"pricing\": 120,\n                \"MRP\": 150,\n                \"purchaseID\": \"b1b61050-9c5d-43a1-8d4d-ff90226cb84f\",\n                \"customerID\": \"42202c89-bc98-430f-92e1-dffb5eea77ce\",\n                \"__v\": 0,\n                \"shipping\": \"61f7f7c456ab9a658780ff6d\"\n            }\n        ],\n        \"__v\": 1\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "All Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/orders/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All Orders",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/orders/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2496"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9c0-dGlhUTp1LobXew+fqkh+rm0YPH8\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Feb 2022 05:11:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"61f7f51a7e03e30b8f52da6a\",\n        \"customername\": \"manjeet\",\n        \"email\": \"manjeet@gmail.com\",\n        \"mobileNo\": 8978897888,\n        \"city\": \"Jaipur\",\n        \"customerID\": \"42202c89-bc98-430f-92e1-dffb5eea77ce\",\n        \"purchaseorder\": [\n            {\n                \"_id\": \"61f7f56c7e03e30b8f52da6e\",\n                \"productname\": \"Dairy Milk\",\n                \"quantity\": 10,\n                \"pricing\": 120,\n                \"MRP\": 150,\n                \"purchaseID\": \"b1b61050-9c5d-43a1-8d4d-ff90226cb84f\",\n                \"customerID\": \"42202c89-bc98-430f-92e1-dffb5eea77ce\",\n                \"__v\": 0,\n                \"shipping\": {\n                    \"_id\": \"61f7f7c456ab9a658780ff6d\",\n                    \"address\": \"plot 15\",\n                    \"city\": \"Jaipur\",\n                    \"pincode\": 302012,\n                    \"purchaseID\": \"b1b61050-9c5d-43a1-8d4d-ff90226cb84f\",\n                    \"customerID\": \"42202c89-bc98-430f-92e1-dffb5eea77ce\",\n                    \"__v\": 0\n                }\n            }\n        ],\n        \"__v\": 1\n    },\n    {\n        \"_id\": \"61f813c50bcd2559dc6bd993\",\n        \"customername\": \"Deepak\",\n        \"email\": \"Deepak@gmail.com\",\n        \"mobileNo\": 84575165434,\n        \"city\": \"Pune\",\n        \"customerID\": \"3aa3c4f3-cb13-483f-8d5f-01d77aa29bcf\",\n        \"purchaseorder\": [\n            {\n                \"_id\": \"61f814cfcbe3577eac006fc4\",\n                \"productname\": \"Oranges\",\n                \"quantity\": 100,\n                \"pricing\": 220,\n                \"MRP\": 250,\n                \"purchaseID\": \"ca3b02f7-531e-405d-9ee5-ec8071308c46\",\n                \"customerID\": \"3aa3c4f3-cb13-483f-8d5f-01d77aa29bcf\",\n                \"__v\": 0,\n                \"shipping\": {\n                    \"_id\": \"61f81510cbe3577eac006fc8\",\n                    \"address\": \"plot 57\",\n                    \"city\": \"Delhi\",\n                    \"pincode\": 110010,\n                    \"purchaseID\": \"ca3b02f7-531e-405d-9ee5-ec8071308c46\",\n                    \"customerID\": \"3aa3c4f3-cb13-483f-8d5f-01d77aa29bcf\",\n                    \"__v\": 0\n                }\n            },\n            {\n                \"_id\": \"61f817f8ba8fa65255040338\",\n                \"productname\": \"Apples\",\n                \"quantity\": 10,\n                \"pricing\": 175,\n                \"MRP\": 200,\n                \"purchaseID\": \"f4d351d4-ebc0-42f1-ae71-567c9cafe6b2\",\n                \"customerID\": \"3aa3c4f3-cb13-483f-8d5f-01d77aa29bcf\",\n                \"__v\": 0,\n                \"shipping\": {\n                    \"_id\": \"61f8182bba8fa6525504033c\",\n                    \"address\": \"plot 894\",\n                    \"city\": \"Jaipur\",\n                    \"pincode\": 302033,\n                    \"purchaseID\": \"f4d351d4-ebc0-42f1-ae71-567c9cafe6b2\",\n                    \"customerID\": \"3aa3c4f3-cb13-483f-8d5f-01d77aa29bcf\",\n                    \"__v\": 0\n                }\n            }\n        ],\n        \"__v\": 2\n    },\n    {\n        \"_id\": \"61f8b3c130434efa5a169463\",\n        \"customername\": \"Abi\",\n        \"email\": \"abi@gmail.com\",\n        \"mobileNo\": 84575157265434,\n        \"city\": \"Pune\",\n        \"customerID\": \"e11ab4b1-5c6b-4bd3-9a7f-44c06e2be3ae\",\n        \"purchaseorder\": [],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"61f8c081566b2aee7d45e5db\",\n        \"customername\": \"Abishek\",\n        \"email\": \"Abishek@gmail.com\",\n        \"mobileNo\": 9848561120,\n        \"city\": \"Ranchi\",\n        \"customerID\": \"b024632b-2b66-4d2b-9856-e6c55d36c478\",\n        \"purchaseorder\": [\n            {\n                \"_id\": \"61f8c0b7566b2aee7d45e5de\",\n                \"productname\": \"OnePlus\",\n                \"quantity\": 1,\n                \"pricing\": 17550,\n                \"MRP\": 20000,\n                \"purchaseID\": \"87f245c4-c03f-49b7-9953-0b27a2dec157\",\n                \"customerID\": \"b024632b-2b66-4d2b-9856-e6c55d36c478\",\n                \"__v\": 0,\n                \"shipping\": {\n                    \"_id\": \"61f8c0fa566b2aee7d45e5e2\",\n                    \"address\": \"sector 985\",\n                    \"city\": \"Pune\",\n                    \"pincode\": 411015,\n                    \"purchaseID\": \"87f245c4-c03f-49b7-9953-0b27a2dec157\",\n                    \"customerID\": \"b024632b-2b66-4d2b-9856-e6c55d36c478\",\n                    \"__v\": 0\n                }\n            }\n        ],\n        \"__v\": 1\n    }\n]"
+				}
+			]
+		}
+	]
+}
